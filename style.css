@@ -3,7 +3,6 @@
 :root {
     --color-dark: #222;
     --color-light: #fff;
-    --color-border: rgba(255, 255, 255, 0.8);
 }
 
 * {
@@ -31,7 +30,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 32px;
-    outline: 5px dashed var(--color-border);
+    outline: 5px dashed var(--color-light);
     outline-offset: -18px;
     background: #333;
     transition: all 0.3s ease;
