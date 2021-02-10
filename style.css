@@ -44,7 +44,7 @@ body {
     pointer-events: none;
 }
 
-.drag-container_state_enter, .container:hover {
+.drag-container_state_enter {
     outline-offset: -28px;
     background: #777;
 }
