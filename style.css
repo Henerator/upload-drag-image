@@ -30,10 +30,10 @@ body {
     align-items: center;
     justify-content: center;
     padding: 32px;
-    outline: 5px dashed var(--color-light);
+    outline: 4px dashed var(--color-light);
     outline-offset: -18px;
     background: #333;
-    transition: all 0.3s ease;
+    transition: all 0.15s ease-in-out;
 }
 
 .container__content {
@@ -44,8 +44,8 @@ body {
     pointer-events: none;
 }
 
-.drag-container_state_enter {
-    outline-offset: -32px;
+.drag-container_state_enter, .container:hover {
+    outline-offset: -28px;
     background: #777;
 }
 
