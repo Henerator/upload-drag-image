@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
 
 :root {
-    --color-dark: #222;
-    --color-light: #fff;
+    --color-body-bg: #e5edf1;
+    --color-container-bg: #c8dadf;
+    --color-container-outline: #92b0b3;
+    --color-container-drag-bg: #fff;
+    --color-container-drag-outline: #c8dadf;
+    --color-message-icon: #92b0b3;
+    --color-message-text: #0f3c4b;
 }
 
 * {
@@ -17,7 +22,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--color-dark);
+    background: var(--color-body-bg);
 }
 
 .container {
@@ -30,9 +35,9 @@ body {
     align-items: center;
     justify-content: center;
     padding: 32px;
-    outline: 4px dashed var(--color-light);
+    outline: 2px dashed var(--color-container-outline);
     outline-offset: -18px;
-    background: #333;
+    background: var(--color-container-bg);
     transition: all 0.15s ease-in-out;
 }
 
@@ -46,7 +51,8 @@ body {
 
 .drag-container_state_enter {
     outline-offset: -28px;
-    background: #777;
+    outline-color: var(--color-container-drag-outline);
+    background: var(--color-container-drag-bg);
 }
 
 .message {
@@ -54,11 +60,11 @@ body {
     text-align: center;
     font-family: "Roboto Mono", monospace;
     font-size: 24px;
-    color: var(--color-light);
+    color: var(--color-message-text);
 }
 
 .icon_download path {
-    fill: var(--color-light);
+    fill: var(--color-message-icon);
 }
 
 .container__attachments {
